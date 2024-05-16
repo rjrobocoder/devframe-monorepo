@@ -14,7 +14,7 @@ const SearchResults = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `https://api.unsplash.com/search/photos`,
+        `${process.env.REACT_APP_UNSPLASH_API_BASE_URL}/search/photos`,
         {
           params: {
             client_id: process.env.REACT_APP_UNSPLASH_CLIENT_ID,
@@ -38,7 +38,7 @@ const SearchResults = () => {
     try {
       const nextPage = page + 1;
       const response = await axios.get(
-        `https://api.unsplash.com/search/photos`,
+        `${process.env.REACT_APP_UNSPLASH_API_BASE_URL}/search/photos`,
         {
           params: {
             client_id: process.env.REACT_APP_UNSPLASH_CLIENT_ID,

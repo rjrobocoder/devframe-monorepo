@@ -13,7 +13,7 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `https://api.unsplash.com/photos?page=${page}`,
+        `${process.env.REACT_APP_UNSPLASH_API_BASE_URL}/photos?page=${page}`,
         {
           params: {
             client_id: process.env.REACT_APP_UNSPLASH_CLIENT_ID,
