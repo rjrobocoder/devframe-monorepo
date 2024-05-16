@@ -1,6 +1,5 @@
 {
-  "homepage": "https://github.com/rjrobocoder/devframe-monorepo/frontend",
-  "name": "frontend",
+  "name": "devframe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
