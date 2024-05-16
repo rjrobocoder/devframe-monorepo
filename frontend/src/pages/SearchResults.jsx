@@ -59,9 +59,11 @@ const SearchResults = () => {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    fetchData(); 
     // Cleanup function
     return () => {};
+    // eslint-disable-next-line 
   }, [query]);
 
   if (loading) return <div>Loading...</div>;

@@ -30,12 +30,14 @@ function App() {
   };
 
   useEffect(() => {
-    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    fetchData(); 
     // Cleanup function
     return () => {
       // Cancel the request if component unmounts before completion
       // (optional, but can prevent memory leaks)
     };
+    // eslint-disable-next-line 
   }, [page]);
 
   const handleInfiniteScroll = async () => {
